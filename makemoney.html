@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>makemoney</title>
+    <link rel="stylesheet" href="style1.css">
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+</head>
+<body>
+    <div class="monthlycontrib">
+        <h2>Let's say you contribute a certain amount each month to the investment.
+            It does not need to be a huge number. Just something you can afford to set aside each month.
+        </h2>
+        <label for="monthly-contribute">Desired monthly contribute:</label>
+        <input type="number" id="monthly-contribute" placeholder="Enter montly contribute amount">
+    </div>
+    <div class="swipe-contrib">
+        <h2>Alot of banks offers "microsaving" in form of setting aside a little bit of money each 
+            time you swipe your card or pay your bills. You can choose the amount yourself.
+        </h2>
+        <label for="swipe-amount">Microsaving amount:</label>
+        <input type="number" id="swipe-amount" placeholder="Enter how much to save each swipe">
+        <label for="swipe-count">Amount of card uses each week:</label>
+        <input type="number" id="swipe-count" placeholder="Enter how often you use your card each week">
+        
+    </div>
+
+
+    
+
+
+    <div class="calculator2">
+        <h1>Compound Interest Calculator</h1>
+        <label for="principal">Principal Amount:</label>
+        <input type="number" id="principal" placeholder="Enter principal amount">
+        <label for="rate">Annual Interest Rate (%) :</label>
+        <input type="number" id="rate" placeholder="Enter annual interest rate">
+        <label for="years">Number of Years:</label>
+        <input type="number" id="years" placeholder="Enter number of years">
+        <label for="calculate"></label>
+        <button onclick="calculate()">Calculate</button>
+    </div>
+    <div class="chart-container">
+        <canvas id="line-chart"></canvas>
+    </div>
+
+
+    <script src="second.js"></script>
+</body>
+</html>

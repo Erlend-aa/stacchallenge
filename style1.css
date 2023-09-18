@@ -1,0 +1,142 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a global font style */
+body {
+    font-family: Arial, sans-serif;
+    background-color:  #b8e6e8  ; /* Light gray background */
+    color: #333; /* Default text color */
+}
+
+/* Style the header */
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin: 20px 0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); /* Add text shadow for readability */
+}
+
+/* Style labels and input fields */
+label {
+    display: block;
+    margin: 10px 0;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); /* Add text shadow for readability */
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px; /* Increase input font size */
+}
+
+/* Style buttons */
+button {
+    background-color: #F5F5DC; /* Blue button */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 220px; /* Increase button max width */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); /* Add text shadow for readability */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Style the main container */
+.calculator2 {
+    background: linear-gradient(-45deg,#333333, #66CCCC ,#333333,#8d0101, #66CCCC ,#333333, #66CCCC); /* Updated gradient */
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    border-radius: 10px; /* Increase border radius */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 30px; /* Increase padding for a larger calculator */
+    text-align: center;
+    
+    width: 80%; /* Increase the container width */
+    max-width: 500px; /* Limit container width */
+    margin: 0 auto;
+    margin-top: 10vh; /* Adjusted top margin */
+}
+
+/* Keyframes for background gradient animation */
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Style the chart container */
+.chart-container {
+    margin-top: 20px;
+    width: 80%;
+    height: 25rem;
+    max-width: 50rem; /* Limit chart container width */
+    margin: 0 auto;
+    margin-top: 2rem;
+    color: white;
+}
+
+/* Style the content containers */
+.monthlycontrib, .swipe-contrib {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Center align text in content containers */
+.monthlycontrib h2, .swipe-contrib h2 {
+    text-align: center;
+    font-size: 18px; /* Increase font size */
+    color: #ffffff;
+}
+
+/* Add spacing to input elements in content containers */
+.monthlycontrib input, .swipe-contrib input {
+    margin: 10px 0;
+    font-size: 16px; /* Increase input font size */
+}
+
+
+/* Center the content containers */
+.monthlycontrib, .swipe-contrib {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:  #333333  ;
+    padding: 20px;
+    border-radius: 5px;
+    
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 80%; /* Decrease the width */
+    max-width: 400px; /* Limit the maximum width */
+    margin: 20px auto; /* Center horizontally */
+    
+}

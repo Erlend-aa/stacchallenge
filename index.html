@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compound Interest Calculator</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+</head>
+<body>
+    
+    <div class="calculator">
+        <h1>Compound Interest Calculator</h1>
+        <label for="principal">Principal Amount:</label>
+        <input type="number" id="principal" placeholder="Enter principal amount">
+        <label for="rate">Annual Interest Rate (%) :</label>
+        <input type="number" id="rate" placeholder="Enter annual interest rate">
+        <label for="years">Number of Years:</label>
+        <input type="number" id="years" placeholder="Enter number of years">
+        <label for="calculate"></label>
+        <button onclick="calculate()">Calculate</button>
+    </div>
+    <div class="chart-container">
+        <canvas id="line-chart"></canvas>
+    </div>
+    <canvas id="scene-container"></canvas>
+    <div class="starttekst">
+        <h1>“doing well with money has a little to do with how smart you are and a lot to do with how you behave”</h1>
+        <h2>Let's see how we can behave a little better
+        </h2>
+        <p>
+            <a href="#" id="triggerbutton"><strong>Start saving</strong></a>
+        </p>
+
+    </div>
+
+    <script src="main.js"></script>
+    <div class="makemoney"><a href="makemoney.html"><p>Over is a normal way of investing your money.
+        Let's look at how we can get more out of saving</p>
+    </a></div>
+</body>
+</html>
