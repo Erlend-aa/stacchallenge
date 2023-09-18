@@ -12,6 +12,8 @@ For example ***yarn start***
 all dependencies should be "packed". If something goes wrong i don't have any other suggestion then to run it in a code editor, write "npm i" in the terminal and let the magic happen. 
 afterwards just write "npm run dev" in the terminal and all should be swell.
 
+Afteredit. Problems with loading dependencies. "npm install three gsap" should do the trick. also sending a zip-file just in case
+
 ## Comments
 Comments regaring design choices, decisions, or anything at all.
 
